@@ -4,15 +4,19 @@ import Layout from './components/layout'
 import Main from './components/main'
 import About from './components/about'
 
+import GnomeProvider from './context/gnomeContext'
+
 function App() {
   return (
     <div className="App">
-      <Layout>
-        <Router>
-          <Main path="/" />
-          <About path="/about" />
-        </Router>
-      </Layout>
+      <GnomeProvider>
+        <Layout>
+          <Router>
+            <Main path="/" />
+            <About path="/about" />
+          </Router>
+        </Layout>
+      </GnomeProvider>
     </div>
   )
 }

@@ -11,14 +11,6 @@ const MainContainer = styled.div`
 `
 
 const Main = () => {
-  fetch('https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json')
-    .then(function(response) {
-      return response.json()
-    })
-    .then(function(myJson) {
-      const data = myJson
-      console.log(data)
-    })
   return (
     <MainContainer>
       <Searcher />
