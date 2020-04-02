@@ -8,10 +8,10 @@ import Header from './header'
 import Footer from './footer'
 
 const LayoutContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-areas: 'header header' 'main main' 'footer footer';
+  grid-template-areas: 'header' 'main' 'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 7em 1fr 5em;
   background-color: ${colors.genericDark};
@@ -46,6 +46,19 @@ const LayoutContainer = styled.div`
   }
   i {
     font-size: 12px;
+  }
+  button {
+    width: 7em;
+    height: 2em;
+    background: ${colors.genericDark};
+    color: ${colors.genericLight};
+    border: 1px solid ${colors.genericHover};
+    margin: 1em;
+    cursor: pointer;
+    &:hover {
+      background: ${colors.genericHover};
+      border: 1px solid ${colors.genericDark};
+    }
   }
 `
 

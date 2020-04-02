@@ -12,6 +12,11 @@ const mainubtitle = ''
 
 // searcher
 const sideSearcherTitle = 'SEARCHER'
+const sideSearcherOptionDefault = ' Choose your gnome!'
+const sideSearcherLabel = 'Find your gnome...'
+const sideSearcherSelectTitle = 'Or select it from the list!'
+const sideSearcherSubmitButton = 'Search!'
+const sideSearcherPlaceholder = 'Search a gnome'
 
 //footer
 const footerSignature = 'oscar ventura -'
@@ -27,6 +32,11 @@ export {
   mainTitle,
   mainubtitle,
   sideSearcherTitle,
+  sideSearcherOptionDefault,
+  sideSearcherLabel,
+  sideSearcherSubmitButton,
+  sideSearcherPlaceholder,
+  sideSearcherSelectTitle,
   footerSignature,
   footerMessage,
   year

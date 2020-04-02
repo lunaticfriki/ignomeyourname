@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { footerSignature, footerMessage, year } from './constants'
 
 const FooterContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 5em;
   grid-area: footer;
   padding: 1em;

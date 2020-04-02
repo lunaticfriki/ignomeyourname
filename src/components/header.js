@@ -4,8 +4,8 @@ import styled from 'styled-components'
 import NavLink from './navLink'
 
 const HeaderContainer = styled.div`
-  width: 100vw;
-  min-height: 7em;
+  width: 100%;
+  height: 7em;
   grid-area: header;
   display: flex;
   flex-direction: column;
