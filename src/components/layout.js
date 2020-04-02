@@ -13,7 +13,7 @@ const LayoutContainer = styled.div`
   display: grid;
   grid-template-areas: 'header header' 'searcher main' 'footer footer';
   grid-template-columns: 10em 1fr;
-  grid-template-rows: 7em 1fr 7em;
+  grid-template-rows: 7em 1fr 5em;
   background-color: ${colors.genericDark};
   color: ${colors.genericLight};
   @font-face {
@@ -43,6 +43,9 @@ const LayoutContainer = styled.div`
   a {
     color: ${colors.genericLight};
     text-decoration: none;
+  }
+  i {
+    font-size: 12px;
   }
 `
 
