@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { footerSignature, footerMessage } from './constants'
+import { footerSignature, footerMessage, year } from './constants'
 
 const FooterContainer = styled.div`
   width: 100vw;
@@ -13,7 +13,6 @@ const FooterContainer = styled.div`
 `
 
 const Footer = () => {
-  const year = new Date().getFullYear()
   return (
     <FooterContainer>
       <i>

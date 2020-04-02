@@ -17,6 +17,8 @@ const sideSearcherTitle = 'SEARCHER'
 const footerSignature = 'oscar ventura -'
 const footerMessage = 'gnome searcher'
 
+const year = new Date().getFullYear()
+
 export {
   headerTitle,
   headerSubtitle,
@@ -26,5 +28,6 @@ export {
   mainubtitle,
   sideSearcherTitle,
   footerSignature,
-  footerMessage
+  footerMessage,
+  year
 }
