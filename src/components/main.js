@@ -1,22 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useContext } from 'react'
 
+import { GnomeContext } from '../context/gnomeContext'
+
+import { MainContainer } from '../styles/MainContainer'
 import Searcher from './searcher'
 import Info from './info'
 
-const MainContainer = styled.div`
-  grid-area: main;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`
-
 const Main = () => {
+  const { gnomes, gnome, setGnome } = useContext(GnomeContext)
   return (
     <MainContainer>
-      <Searcher />
-      <Info />
+      <Searcher gnomes={gnomes} gnome={gnome} setGnome={setGnome} />
+      <Info gnomes={gnomes} gnome={gnome} />
     </MainContainer>
   )
 }

@@ -17,7 +17,7 @@ const useGnome = (label, options) => {
       >
         <option hidden={true}>{sideSearcherOptionDefault}</option>
         {options.map(item => (
-          <option key={item.id} value={item}>
+          <option key={item.id} value={item.name}>
             {item.name}
           </option>
         ))}

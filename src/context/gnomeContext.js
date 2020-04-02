@@ -5,7 +5,7 @@ export const GnomeContext = createContext()
 
 const GnomeProvider = props => {
   const [gnomes, setGnomes] = useState([])
-
+  const [gnome, setGnome] = useState('')
   useEffect(() => {
     const fetchGnomes = async () => {
       const url = 'https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json'
@@ -15,7 +15,7 @@ const GnomeProvider = props => {
     fetchGnomes()
   }, [])
 
-  return <GnomeContext.Provider value={{ gnomes }}>{props.children}</GnomeContext.Provider>
+  return <GnomeContext.Provider value={{ gnomes, gnome, setGnome }}>{props.children}</GnomeContext.Provider>
 }
 
 export default GnomeProvider
