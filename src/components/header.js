@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { colors } from './colors'
+import NavLink from './navLink'
 
 const HeaderContainer = styled.div`
   width: 100vw;
@@ -14,9 +14,11 @@ const HeaderContainer = styled.div`
   align-items: center;
   nav {
     padding-block-start: 1em;
+    display: flex;
   }
   li {
     align-self: flex-end;
+    padding-inline-end: 1em;
     cursor: pointer;
   }
 `
@@ -24,10 +26,17 @@ const HeaderContainer = styled.div`
 const Header = () => {
   return (
     <HeaderContainer>
-      <h1>I GNOME YOUR NAME!</h1>
+      <NavLink to="/">
+        <h1>I GNOME YOUR NAME!</h1>
+      </NavLink>
       <h2>Search your favorite gnome from Brastlewark!</h2>
       <nav>
-        <li>About me</li>
+        <NavLink to="/">
+          <li>Searcher</li>
+        </NavLink>
+        <NavLink to="/about">
+          <li>About me</li>
+        </NavLink>
       </nav>
     </HeaderContainer>
   )

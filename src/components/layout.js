@@ -40,6 +40,10 @@ const LayoutContainer = styled.div`
       color: ${colors.genericHover};
     }
   }
+  a {
+    color: ${colors.genericLight};
+    text-decoration: none;
+  }
 `
 
 const Layout = ({ children }) => {
