@@ -9,6 +9,11 @@ scrollbar-width: none;
 background-color: black;
 }
 
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+}
+
 body {
   width: 100%;
 }

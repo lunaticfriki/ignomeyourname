@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
-import { sideSearcherOptionDefault } from '../components/constants'
+import { translations } from '../components/constants'
 
 const useGnome = (label, options) => {
+  const { sideSearcherOptionDefault } = translations
+
   const [state, setState] = useState('')
   const id = `use-gnome-${label.replace(' ', '').toLowerCase()}`
   const Dropdown = () => (

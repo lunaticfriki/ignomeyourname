@@ -1,9 +1,11 @@
 import React from 'react'
 
-import { footerSignature, footerMessage, year } from './constants'
+import { translations } from './constants'
 import { FooterContainer } from '../styles/FooterContainer'
 
 const Footer = () => {
+  const { footerSignature, footerMessage, year } = translations
+
   return (
     <FooterContainer>
       <i>

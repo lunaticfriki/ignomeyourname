@@ -1,39 +1,34 @@
-// header
-const headerTitle = 'i gnome your name!'
-const headerSubtitle = 'Search your favorite gnome from Brastlewark!'
+export const translations = {
+  // header
+  headerTitle: 'i gnome your name!',
+  headerSubtitle: 'Search your favorite gnome from Brastlewark!',
 
-//nav
-const navSearcher = 'Searcher'
-const navAbout = 'About me'
+  //nav
+  navSearcher: 'Searcher',
+  navAbout: 'About me',
 
-//main
-const mainTitle = ''
-const mainubtitle = ''
+  //main
+  mainTitle: '',
+  mainubtitle: '',
 
-// searcher
-const sideSearcherTitle = 'SEARCHER'
-const sideSearcherOptionDefault = ' Choose your gnome!'
-const sideSearcherSelectTitle = 'Find your gnome'
-const sideSearcherSubmitButton = 'Search!'
+  // searcher
+  sideSearcherTitle: 'SEARCHER',
+  sideSearcherOptionDefault: ' Choose your gnome!',
+  sideSearcherSelectTitle: 'Find your gnome',
+  sideSearcherSubmitButton: 'Search!',
 
-//footer
-const footerSignature = 'oscar ventura -'
-const footerMessage = 'gnome searcher'
+  //info
+  noInfo: 'Select a gnome',
+  gnomeAge: 'Age: ',
+  gnomeWeight: 'Weight: ',
+  gnomeHeight: 'Height: ',
+  gnomeHaircolor: 'Haircolor: ',
+  gnomeProfessions: 'Professions: ',
+  gnomeFriends: 'Friends: ',
 
-const year = new Date().getFullYear()
+  //footer
+  footerSignature: 'oscar ventura -',
+  footerMessage: 'gnome searcher',
 
-export {
-  headerTitle,
-  headerSubtitle,
-  navSearcher,
-  navAbout,
-  mainTitle,
-  mainubtitle,
-  sideSearcherTitle,
-  sideSearcherOptionDefault,
-  sideSearcherSubmitButton,
-  sideSearcherSelectTitle,
-  footerSignature,
-  footerMessage,
-  year
+  year: new Date().getFullYear()
 }

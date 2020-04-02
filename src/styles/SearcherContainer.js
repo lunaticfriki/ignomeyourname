@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SearcherContainer = styled.div`
-  width: 40%;
+  width: 20%;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,7 @@ export const SearcherContainer = styled.div`
     .c-use-gnome {
       display: flex;
       flex-direction: column;
+      padding: 0;
     }
     input,
     select {

@@ -1,21 +1,24 @@
 import React from 'react'
 
 import NavLink from './navLink'
+import { translations } from './constants'
 import { HeaderContainer } from '../styles/HeaderContainer'
 
 const Header = () => {
+  const { headerTitle, headerSubtitle, navSearcher, navAbout } = translations
+
   return (
     <HeaderContainer>
       <NavLink to="/">
-        <h1>I GNOME YOUR NAME!</h1>
+        <h1>{headerTitle.toUpperCase()}</h1>
       </NavLink>
-      <h2>Search your favorite gnome from Brastlewark!</h2>
+      <h2>{headerSubtitle}</h2>
       <nav>
         <NavLink to="/">
-          <li>Searcher</li>
+          <li>{navSearcher}</li>
         </NavLink>
         <NavLink to="/about">
-          <li>About me</li>
+          <li>{navAbout}</li>
         </NavLink>
       </nav>
     </HeaderContainer>

@@ -1,34 +1,55 @@
 import React from 'react'
+
 import { InfoContainer } from '../styles/InfoContainer'
 
+import { translations } from './constants'
+
 const Info = ({ gnomes, gnome }) => {
+  const { noInfo, gnomeAge, gnomeWeight, gnomeHeight, gnomeHaircolor, gnomeProfessions, gnomeFriends } = translations
+
   return (
     <InfoContainer>
-      {gnomes.map(
-        el =>
-          el.name === gnome && (
-            <div key={el.id}>
-              <h4>{el.name}</h4>
-              <img src={el.thumbnail} alt={el.name} style={{ width: '500px' }}></img>
-              <p>{el.age}</p>
-              <p>{el.weight}</p>
-              <p>{el.height}</p>
-              <p>{el.hair_color}</p>
-              <ul>
-                Professions:
-                {el.professions.map((prof, idx) => (
-                  <li key={idx}>{prof}</li>
-                ))}
-              </ul>
-              <ul>
-                Friends:
-                {el.professions.map((friend, idx) => (
-                  <li key={idx}>{friend}</li>
-                ))}
-              </ul>
-            </div>
-          )
-      )}
+      {gnome.length === 0
+        ? noInfo
+        : gnomes.map(
+            el =>
+              el.name === gnome && (
+                <div className="c-info-card" key={el.id}>
+                  <div className="c-info-title">
+                    <h4>{el.name}</h4>
+                    <img src={el.thumbnail} alt={el.name}></img>
+                  </div>
+                  <div className="c-info-content">
+                    <p>
+                      {gnomeAge} {el.age}
+                    </p>
+                    <p>
+                      {gnomeWeight} {el.weight}
+                    </p>
+                    <p>
+                      {gnomeHeight}
+                      {el.height}
+                    </p>
+                    <p>
+                      {gnomeHaircolor}
+                      {el.hair_color}
+                    </p>
+                    <p>{gnomeProfessions}</p>
+                    <ul>
+                      {el.professions.map((prof, idx) => (
+                        <li key={idx}>{prof}</li>
+                      ))}
+                    </ul>
+                    <p>{gnomeFriends}</p>
+                    <ul>
+                      {el.professions.map((friend, idx) => (
+                        <li key={idx}>{friend}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              )
+          )}
     </InfoContainer>
   )
 }
