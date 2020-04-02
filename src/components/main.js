@@ -1,8 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Searcher from './searcher'
+import Info from './info'
+
 const MainContainer = styled.div`
   grid-area: main;
+  display: flex;
+  flex-direction: row;
 `
 
 const Main = () => {
@@ -14,7 +19,12 @@ const Main = () => {
       const data = myJson
       console.log(data)
     })
-  return <MainContainer>holi</MainContainer>
+  return (
+    <MainContainer>
+      <Searcher />
+      <Info />
+    </MainContainer>
+  )
 }
 
 export default Main
