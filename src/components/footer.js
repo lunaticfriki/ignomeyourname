@@ -8,11 +8,7 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      <i>
-        {`${footerSignature} 
-        ${footerMessage} -
-        ${year}`}
-      </i>
+      <i>{`${footerSignature} ${footerMessage} - ${year}`}</i>
     </FooterContainer>
   )
 }

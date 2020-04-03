@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component suite Footer snapshot 1`] = `
+<div
+  className="sc-AxjAm fQmAVz"
+>
+  <i>
+    oscar ventura - gnome searcher - 2020
+  </i>
+</div>
+`;
