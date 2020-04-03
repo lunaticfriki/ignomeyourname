@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
+  grid-area: main;
   width: 100%;
   min-height: 100%;
   display: flex;

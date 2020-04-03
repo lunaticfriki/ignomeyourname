@@ -5,7 +5,7 @@ import { translations } from './constants'
 import { HeaderContainer } from '../styles/HeaderContainer'
 
 const Header = () => {
-  const { headerTitle, headerSubtitle, navSearcher, navAbout } = translations
+  const { headerTitle, headerSubtitle, navSearcher, navAbout, navGallery } = translations
 
   return (
     <HeaderContainer>
@@ -16,6 +16,9 @@ const Header = () => {
       <nav>
         <NavLink to="/">
           <li>{navSearcher}</li>
+        </NavLink>
+        <NavLink to="/gallery">
+          <li>{navGallery}</li>
         </NavLink>
         <NavLink to="/about">
           <li>{navAbout}</li>

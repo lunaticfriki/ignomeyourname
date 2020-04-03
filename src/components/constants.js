@@ -6,6 +6,7 @@ export const translations = {
   //nav
   navSearcher: 'Searcher',
   navAbout: 'About me',
+  navGallery: 'Gallery',
 
   //about
   aboutTitle: 'Gnome me!',
@@ -31,6 +32,9 @@ export const translations = {
   gnomeHaircolor: 'Haircolor: ',
   gnomeProfessions: 'Professions: ',
   gnomeFriends: 'Friends: ',
+
+  //gallery
+  galleryTitle: '',
 
   //footer
   footerSignature: 'oscar ventura -',

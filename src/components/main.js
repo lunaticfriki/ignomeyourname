@@ -1,13 +1,10 @@
-import React, { useContext } from 'react'
-
-import { GnomeContext } from '../context/gnomeContext'
+import React from 'react'
 
 import { MainContainer } from '../styles/MainContainer'
 import Searcher from './searcher'
 import Info from './info'
 
-const Main = () => {
-  const { gnomes, gnome, setGnome } = useContext(GnomeContext)
+const Main = ({ gnomes, gnome, setGnome }) => {
   return (
     <MainContainer>
       <Searcher gnomes={gnomes} gnome={gnome} setGnome={setGnome} />
