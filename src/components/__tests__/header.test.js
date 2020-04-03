@@ -6,7 +6,7 @@ import Header from '../header'
 import { translations } from '../constants'
 
 describe('Header component suite', () => {
-  const { headerTitle, headerSubtitle, navSearcher, navAbout } = translations
+  const { headerTitle, headerSubtitle, navSearcher, navAbout, navGallery } = translations
   const wrapperMount = mount(<Header />)
   test('Header snapshot', () => {
     const component = renderer.create(<Header />)
@@ -29,6 +29,12 @@ describe('Header component suite', () => {
       wrapperMount
         .find('li')
         .at(1)
+        .text()
+    ).toEqual(navGallery)
+    expect(
+      wrapperMount
+        .find('li')
+        .at(2)
         .text()
     ).toEqual(navAbout)
   })

@@ -2,7 +2,7 @@
 
 exports[`Header component suite Header snapshot 1`] = `
 <div
-  className="sc-AxjAm hgpxJj"
+  className="sc-AxjAm emQxea"
 >
   <a
     aria-current="page"
@@ -34,6 +34,19 @@ exports[`Header component suite Header snapshot 1`] = `
     >
       <li>
         Searcher
+      </li>
+    </a>
+    <a
+      href="/gallery"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#fff",
+        }
+      }
+    >
+      <li>
+        Gallery
       </li>
     </a>
     <a

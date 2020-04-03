@@ -2,13 +2,13 @@
 
 exports[`Footer component suite About snapshot 1`] = `
 <div
-  className="sc-AxjAm fxqOWP"
+  className="sc-AxjAm FKFEJ"
 >
   <h3>
     Gnome me!
   </h3>
   <article>
-    Hi, I'm Oscar Ventura, 34 years old and still searching the gender of all these gnomes...
+    Hi, I'm still searching the gender of all these gnomes...
   </article>
   <a
     href="https://unsplash.com/photos/50cGSHm1Jro"
