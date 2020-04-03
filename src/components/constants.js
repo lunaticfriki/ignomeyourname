@@ -10,7 +10,7 @@ export const translations = {
 
   //about
   aboutTitle: 'Gnome me!',
-  aboutArticle: `Hi, I'm Oscar Ventura, 34 years old and still searching the gender of all these gnomes...`,
+  aboutArticle: `Hi, I'm still searching the gender of all these gnomes...`,
   aboutPhotoText: 'Photo by David Brooke Martin on Unsplash',
   aboutPhotoUrl: 'https://unsplash.com/photos/50cGSHm1Jro',
 

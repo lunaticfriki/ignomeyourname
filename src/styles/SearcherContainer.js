@@ -25,6 +25,7 @@ export const SearcherContainer = styled.div`
       border: none;
       padding: 0.5em;
       margin-block-start: 0.5em;
+      cursor: pointer;
     }
     button {
       align-self: center;
