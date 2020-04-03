@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component suite Header snapshot 1`] = `
+<div
+  className="sc-AxjAm hgpxJj"
+>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "#d62b9a",
+      }
+    }
+  >
+    <h1>
+      I GNOME YOUR NAME!
+    </h1>
+  </a>
+  <h2>
+    Search your favorite gnome from Brastlewark!
+  </h2>
+  <nav>
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#d62b9a",
+        }
+      }
+    >
+      <li>
+        Searcher
+      </li>
+    </a>
+    <a
+      href="/about"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#fff",
+        }
+      }
+    >
+      <li>
+        About me
+      </li>
+    </a>
+  </nav>
+</div>
+`;
