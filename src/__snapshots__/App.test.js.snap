@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component suite App snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="sc-AxiKw glfEax"
+  >
+    <div
+      className="sc-AxjAm emQxea"
+    >
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#d62b9a",
+          }
+        }
+      >
+        <h1>
+          I GNOME YOUR NAME!
+        </h1>
+      </a>
+      <h2>
+        Search your favorite gnome from Brastlewark!
+      </h2>
+      <nav>
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#d62b9a",
+            }
+          }
+        >
+          <li>
+            Searcher
+          </li>
+        </a>
+        <a
+          href="/gallery"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#fff",
+            }
+          }
+        >
+          <li>
+            Gallery
+          </li>
+        </a>
+        <a
+          href="/about"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "#fff",
+            }
+          }
+        >
+          <li>
+            About me
+          </li>
+        </a>
+      </nav>
+    </div>
+    <div
+      style={
+        Object {
+          "outline": "none",
+        }
+      }
+      tabIndex="-1"
+    >
+      <div
+        className="sc-AxhCb kHyhon"
+      >
+        <div
+          className="sc-AxhUy ifQeDL"
+        >
+          <form
+            onSubmit={[Function]}
+          >
+            <label
+              className="c-use-gnome"
+              htmlFor="use-gnome-findyour gnome"
+            >
+              Find your gnome
+              <select
+                disabled={true}
+                id="use-gnome-findyour gnome"
+                onBlur={[Function]}
+                onChange={[Function]}
+                value=""
+              >
+                <option
+                  hidden={true}
+                >
+                   Choose your gnome!
+                </option>
+              </select>
+            </label>
+            <button>
+              Search!
+            </button>
+          </form>
+        </div>
+        <div
+          className="sc-AxgMl geVLdt"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-AxirZ hwMGtO"
+    >
+      <i>
+        oscar ventura - gnome searcher - 2020
+      </i>
+    </div>
+  </div>
+</div>
+`;

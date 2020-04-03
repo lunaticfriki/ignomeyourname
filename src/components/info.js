@@ -24,11 +24,11 @@ const Info = ({ gnomes, gnome }) => {
                       {gnomeAge} {el.age}
                     </p>
                     <p>
-                      {gnomeWeight} {el.weight}
+                      {gnomeWeight} {el.weight.toFixed(1)}
                     </p>
                     <p>
                       {gnomeHeight}
-                      {el.height}
+                      {el.height.toFixed(1)}
                     </p>
                     <p>
                       {gnomeHaircolor}

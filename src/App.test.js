@@ -1,10 +1,20 @@
-import React from 'react'
-import { shallow } from 'enzyme'
+import React, { useContext } from 'react'
+import renderer from 'react-test-renderer'
+import { GnomeContext } from './context/gnomeContext'
 import App from './App'
 
-test('Should render the home page', () => {
-  const dummyProps = {}
-  const wrapper = shallow(<App {...dummyProps} />)
+describe('App component suite', () => {
+  const gnomes = []
+  const gnome = {}
+  const setGnome = () => {}
 
-  expect(wrapper.find(App)).toBeTruthy()
+  test('App snapshot', () => {
+    const component = renderer.create(
+      <GnomeContext.Provider value={{ gnomes, gnome, setGnome }}>
+        <App />
+      </GnomeContext.Provider>
+    )
+    let tree = component.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })
