@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import renderer from 'react-test-renderer'
 import { GnomeContext } from './context/gnomeContext'
 import App from './App'
