@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { colors } from '../components/colors'
+
 export const GalleryContainer = styled.div`
   grid-area: main;
   display: flex;
@@ -18,8 +20,17 @@ export const GalleryContainer = styled.div`
     align-items: center;
     overflow: hidden;
     margin-block-end: 1em;
+    &:hover {
+      p {
+        color: ${colors.genericHover};
+      }
+      img {
+        opacity: 0.5;
+      }
+    }
   }
   img {
     width: 15em;
+    cursor: pointer;
   }
 `

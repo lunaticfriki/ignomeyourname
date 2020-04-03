@@ -3,12 +3,12 @@ import Montserrat from '../assets/fonts/Montserrat-Regular.ttf'
 import { colors } from '../components/colors'
 
 export const LayoutContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
   grid-template-columns: 80vw;
-  grid-template-rows: 7em 1fr 5em;
+  grid-template-rows: 9em 1fr 5em;
   background-color: ${colors.genericDark};
   color: ${colors.genericLight};
   @font-face {

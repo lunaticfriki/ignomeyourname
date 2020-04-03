@@ -1,32 +1,22 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 
 import { GalleryContainer } from '../styles/GalleryContainer'
+import Info from './info'
 import ModalInfo from './modalInfo'
+import useOnClick from '../hooks/useOnClick'
 
 const Gallery = ({ gnomes, gnome, setGnome }) => {
   const [showModal, setShowModal] = useState(false)
-  const toggleModal = () => setShowModal(!showModal)
   const viewInfo = id => {
     setGnome(id)
-    console.log(id)
-    toggleModal()
+    setShowModal(true)
   }
-  const node = useRef()
-  const handleClick = e => {
-    if (node.current.contains(e.target)) {
-      return
-    }
-    toggleModal()
-  }
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClick)
-    return () => {
-      document.removeEventListener('mousedown', handleClick)
-    }
-  })
+  const ref = useRef()
+  useOnClick(ref, () => setShowModal(false))
+
   return (
     <GalleryContainer>
-      <section ref={node}>
+      <section>
         {gnomes.map(gn => (
           <article key={gn.id} onClick={() => viewInfo(gn)}>
             <p>{gn.name}</p>
@@ -34,9 +24,15 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
           </article>
         ))}
         {showModal && (
-          <ModalInfo>
-            <h1>holi</h1>
-            <button onClick={toggleModal}>close</button>
+          <ModalInfo ref={ref}>
+            <header>
+              <button onClick={() => setShowModal(false)}>
+                <i className="fas fa-times"></i>
+              </button>
+            </header>
+            <section>
+              <Info gnomes={gnomes} gnome={gnome.name} />
+            </section>
           </ModalInfo>
         )}
       </section>

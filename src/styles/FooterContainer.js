@@ -8,6 +8,7 @@ export const FooterContainer = styled.div`
   grid-area: footer;
   padding: 1em;
   display: flex;
+  justify-content: center;
   align-items: center;
   background: ${colors.genericDark};
   position: sticky;
