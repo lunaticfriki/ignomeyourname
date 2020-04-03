@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { colors } from '../components/colors'
+
 export const FooterContainer = styled.div`
   width: 100%;
   min-height: 5em;
@@ -7,4 +9,7 @@ export const FooterContainer = styled.div`
   padding: 1em;
   display: flex;
   align-items: center;
+  i {
+    color: ${colors.genericTitle};
+  }
 `
