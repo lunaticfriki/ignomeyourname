@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component suite About snapshot 1`] = `
+<div
+  className="sc-AxjAm fxqOWP"
+>
+  <h3>
+    Gnome me!
+  </h3>
+  <article>
+    Hi, I'm Oscar Ventura, 34 years old and still searching the gender of all these gnomes...
+  </article>
+  <a
+    href="https://unsplash.com/photos/50cGSHm1Jro"
+    target="blank"
+  >
+    <img
+      alt="gnome"
+      src="david-brooke-martin.jpg"
+    />
+  </a>
+  <i>
+    Photo by David Brooke Martin on Unsplash
+  </i>
+</div>
+`;
