@@ -9,6 +9,9 @@ export const FooterContainer = styled.div`
   padding: 1em;
   display: flex;
   align-items: center;
+  background: ${colors.genericDark};
+  position: sticky;
+  bottom: 0;
   i {
     color: ${colors.genericTitle};
   }
