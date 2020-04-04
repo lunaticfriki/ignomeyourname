@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { InfoContainer } from '../styles/InfoContainer'
-
 import { translations } from './constants'
 
 const Info = ({ gnomes, gnome }) => {
@@ -12,7 +11,7 @@ const Info = ({ gnomes, gnome }) => {
       {gnome.length === 0
         ? noInfo
         : gnomes.map(
-            el =>
+            (el) =>
               el.name === gnome && (
                 <div className="c-info-card" key={el.id}>
                   <div className="c-info-title">
