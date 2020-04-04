@@ -5,6 +5,8 @@ import { colors } from '../components/colors'
 export const InfoContainer = styled.div`
   width: 100%;
   padding: 1em;
+  display: flex;
+  justify-content: center;
   .c-info-card {
     width: 100%;
     height: 100%;
