@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { InfoContainer } from '../styles/InfoContainer'
-
 import { translations } from './constants'
 
 const Info = ({ gnomes, gnome }) => {
