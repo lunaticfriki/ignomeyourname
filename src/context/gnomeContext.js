@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const GnomeContext = createContext()
 
-const GnomeProvider = props => {
+const GnomeProvider = (props) => {
   const [gnomes, setGnomes] = useState([])
   const [gnome, setGnome] = useState('')
   useEffect(() => {
@@ -15,7 +15,7 @@ const GnomeProvider = props => {
     fetchGnomes()
   }, [])
 
-  return <GnomeContext.Provider value={{ gnomes, gnome, setGnome }}>{props.children}</GnomeContext.Provider>
+  return <GnomeContext.Provider value={{ gnomes, gnome, setGnome, setGnomes }}>{props.children}</GnomeContext.Provider>
 }
 
 export default GnomeProvider

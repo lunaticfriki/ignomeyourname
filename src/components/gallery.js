@@ -7,17 +7,16 @@ import useOnClick from '../hooks/useOnClick'
 
 const Gallery = ({ gnomes, gnome, setGnome }) => {
   const [showModal, setShowModal] = useState(false)
-  const viewInfo = id => {
+  const viewInfo = (id) => {
     setGnome(id)
     setShowModal(true)
   }
   const ref = useRef()
   useOnClick(ref, () => setShowModal(false))
-
   return (
     <GalleryContainer>
       <section>
-        {gnomes.map(gn => (
+        {gnomes.map((gn) => (
           <article key={gn.id} onClick={() => viewInfo(gn)}>
             <p>{gn.name}</p>
             <img src={gn.thumbnail} alt={gn.name} />
