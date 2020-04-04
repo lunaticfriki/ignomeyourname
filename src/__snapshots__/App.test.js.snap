@@ -79,7 +79,7 @@ exports[`App component suite App snapshot 1`] = `
       tabIndex="-1"
     >
       <div
-        className="sc-AxhCb kHyhon"
+        className="sc-AxhCb eHvKPQ"
       >
         <div
           className="sc-AxhUy ifQeDL"
@@ -112,7 +112,7 @@ exports[`App component suite App snapshot 1`] = `
           </form>
         </div>
         <div
-          className="sc-AxgMl geVLdt"
+          className="sc-AxgMl eMMsbF"
         />
       </div>
     </div>
