@@ -6,20 +6,44 @@ import ModalInfo from './modalInfo'
 import useOnClick from '../hooks/useOnClick'
 
 const Gallery = ({ gnomes, gnome, setGnome }) => {
+  const [imagesDisplayed, setImagesDisplayed] = useState(0)
+  const [moreImages, setMoreImages] = useState(20)
   const [showModal, setShowModal] = useState(false)
   const viewInfo = (id) => {
     setGnome(id)
     setShowModal(true)
   }
+  const previousImages = () => {
+    setImagesDisplayed(imagesDisplayed - 20)
+    setMoreImages(moreImages - 20)
+    window.scrollTo(0, 0)
+  }
+  const showMoreImages = () => {
+    setImagesDisplayed(imagesDisplayed + 20)
+    setMoreImages(moreImages + 20)
+    window.scrollTo(0, 0)
+  }
   const ref = useRef()
   useOnClick(ref, () => setShowModal(false))
   return (
     <GalleryContainer>
+      <div className="c-gallery-menu">
+        {imagesDisplayed !== 0 && (
+          <div>
+            <button onClick={previousImages}>Show previous</button>
+          </div>
+        )}
+        <div>
+          <button onClick={showMoreImages}>Show more</button>
+        </div>
+      </div>
       <section>
-        {gnomes.map((gn) => (
+        {gnomes.slice(imagesDisplayed, moreImages).map((gn) => (
           <article key={gn.id} onClick={() => viewInfo(gn)}>
             <p>{gn.name}</p>
-            <img src={gn.thumbnail} alt={gn.name} />
+            <div className="c-image">
+              <img src={gn.thumbnail} alt={gn.name} />
+            </div>
           </article>
         ))}
         {showModal && (
@@ -35,6 +59,16 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
           </ModalInfo>
         )}
       </section>
+      <div className="c-gallery-menu">
+        {imagesDisplayed !== 0 && (
+          <div>
+            <button onClick={previousImages}>Show previous</button>
+          </div>
+        )}
+        <div>
+          <button onClick={showMoreImages}>Show more</button>
+        </div>
+      </div>
     </GalleryContainer>
   )
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { device } from '../devices'
+import { device } from './devices'
 
 export const AppContainer = styled.div`
   @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.mobileL} {

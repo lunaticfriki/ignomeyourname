@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Montserrat from '../assets/fonts/Montserrat-Regular.ttf'
 
-import { device } from '../devices'
+import { device } from './devices'
 import { colors } from '../components/colors'
 
 export const ModalInfoContainer = styled.div`
@@ -48,8 +48,7 @@ export const ModalInfoContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 5px;
-  border: 1px solid ${colors.genericTitle};
+  border: 2px solid ${colors.genericTitle};
   box-shadow: 1px 2px 5px black;
   z-index: 2;
   overflow-y: scroll;

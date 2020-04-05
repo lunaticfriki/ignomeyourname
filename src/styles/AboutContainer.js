@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { device } from '../devices'
+import { device } from './devices'
 
 export const AboutContainer = styled.div`
   grid-area: main;
@@ -10,6 +10,29 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  article {
+    @media ${device.mobileS} {
+      font-size: 9px;
+    }
+    @media ${device.mobileM} {
+      font-size: 12px;
+    }
+    @media ${device.mobileL} {
+      font-size: 12px;
+    }
+    @media ${device.tablet} {
+      font-size: 16px;
+    }
+    @media ${device.laptop} {
+      font-size: 16px;
+    }
+    @media ${device.laptopL} {
+      font-size: 18px;
+    }
+    @media ${device.desktop} {
+      font-size: 20px;
+    }
+  }
   img {
     @media ${device.mobileS} {
       width: 300px;

@@ -1,64 +1,75 @@
 import styled from 'styled-components'
 
-import { device } from '../devices'
+import { device } from './devices'
 import { colors } from '../components/colors'
 
 export const GalleryContainer = styled.div`
   grid-area: main;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+  .c-gallery-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   section {
     @media ${device.mobileS} {
-      columns: 1;
-      padding-block-start: unset;
+      width: 100%;
     }
     @media ${device.mobileM} {
-      columns: 1;
-      padding-block-start: unset;
+      width: 100%;
     }
     @media ${device.mobileL} {
-      columns: 1;
-      padding-block-start: unset;
+      width: 100%;
     }
     @media ${device.tablet} {
-      columns: 2;
-      padding-block-start: 1em;
+      width: 100%;
     }
     @media ${device.laptop} {
-      columns: 3;
-      padding-block-start: 2em;
+      width: 100%;
     }
     @media ${device.laptopL} {
-      columns: 4;
-      padding-block-start: 2em;
+      width: 60%;
     }
     @media ${device.desktop} {
-      columns: 5;
-      padding-block-start: 2em;
+      width: 60%;
     }
-    display: inline-block;
-    padding-block-start: 2em;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: -8px;
   }
   article {
-    width: 15em;
+    width: 30em;
+    height: 20em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    margin: 1em;
     overflow: hidden;
-    margin-block-end: 1em;
+    .c-image {
+      overflow: hidden;
+    }
+    img {
+      width: 30em;
+      transition: 1s;
+      cursor: pointer;
+    }
     &:hover {
       p {
         color: ${colors.genericHover};
       }
       img {
+        transition: 1s;
         opacity: 0.5;
+        transform: scale(1.5);
       }
     }
-  }
-  img {
-    width: 15em;
-    cursor: pointer;
   }
 `

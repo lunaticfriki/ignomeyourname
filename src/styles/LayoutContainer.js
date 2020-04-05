@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Montserrat from '../assets/fonts/Montserrat-Regular.ttf'
 
-import { device } from '../devices'
+import { device } from './devices'
 import { colors } from '../components/colors'
 
 export const LayoutContainer = styled.div`
@@ -10,7 +10,28 @@ export const LayoutContainer = styled.div`
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
   grid-template-columns: 100%;
-  grid-template-rows: 9em 1fr 5em;
+  grid-template-rows: 10em 1fr 5em;
+  @media ${device.mobileS} {
+    grid-template-rows: 5em 1fr 5em;
+  }
+  @media ${device.mobileM} {
+    grid-template-rows: 5em 1fr 5em;
+  }
+  @media ${device.mobileL} {
+    grid-template-rows: 5em 1fr 5em;
+  }
+  @media ${device.tablet} {
+    grid-template-rows: 10em 1fr 5em;
+  }
+  @media ${device.laptop} {
+    grid-template-rows: 10em 1fr 5em;
+  }
+  @media ${device.laptopL} {
+    grid-template-rows: 10em 1fr 5em;
+  }
+  @media ${device.desktop} {
+    grid-template-rows: 10em 1fr 5em;
+  }
   background-color: ${colors.genericDark};
   color: ${colors.genericLight};
   @font-face {

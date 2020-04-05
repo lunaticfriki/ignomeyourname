@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { device } from '../devices'
+import { device } from './devices'
 import { colors } from '../components/colors'
 
 export const InfoContainer = styled.div`
