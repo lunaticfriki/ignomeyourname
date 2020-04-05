@@ -37,13 +37,15 @@ export const HeaderContainer = styled.div`
   top: 0;
   z-index: 1;
   nav {
+    width: 100%;
     padding-block-start: 1em;
     display: flex;
+    justify-content: center;
   }
   li {
     list-style: none;
     @media ${device.mobileS} {
-      font-size: 16px;
+      font-size: 14px;
     }
     @media ${device.mobileM} {
       font-size: 16px;
@@ -64,7 +66,7 @@ export const HeaderContainer = styled.div`
       font-size: 20px;
     }
     align-self: flex-end;
-    padding-inline-end: 1em;
     cursor: pointer;
+    padding: 0 1em 0 1em;
   }
 `
