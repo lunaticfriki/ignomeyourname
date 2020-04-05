@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import { device } from '../devices'
 import { colors } from '../components/colors'
 
 export const GalleryContainer = styled.div`
@@ -7,7 +8,34 @@ export const GalleryContainer = styled.div`
   display: flex;
   justify-content: center;
   section {
-    columns: 5;
+    @media ${device.mobileS} {
+      columns: 1;
+      padding-block-start: unset;
+    }
+    @media ${device.mobileM} {
+      columns: 1;
+      padding-block-start: unset;
+    }
+    @media ${device.mobileL} {
+      columns: 1;
+      padding-block-start: unset;
+    }
+    @media ${device.tablet} {
+      columns: 2;
+      padding-block-start: 1em;
+    }
+    @media ${device.laptop} {
+      columns: 3;
+      padding-block-start: 2em;
+    }
+    @media ${device.laptopL} {
+      columns: 4;
+      padding-block-start: 2em;
+    }
+    @media ${device.desktop} {
+      columns: 5;
+      padding-block-start: 2em;
+    }
     display: inline-block;
     padding-block-start: 2em;
     margin: auto;

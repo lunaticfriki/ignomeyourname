@@ -13,10 +13,3 @@ background-color: black;
   display: none;
   -ms-overflow-style: none;
 }
-
-.App {
-  width: 80%; 
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}

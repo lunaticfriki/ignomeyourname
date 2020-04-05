@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import Montserrat from '../assets/fonts/Montserrat-Regular.ttf'
+
+import { device } from '../devices'
 import { colors } from '../components/colors'
 
 export const ModalInfoContainer = styled.div`
@@ -8,7 +10,34 @@ export const ModalInfoContainer = styled.div`
     src: url(${Montserrat});
   }
   font-family: 'Montserrat';
-  width: 50em;
+  @media ${device.mobileS} {
+    width: 100%;
+    height: 100%;
+  }
+  @media ${device.mobileM} {
+    width: 100%;
+    height: 100%;
+  }
+  @media ${device.mobileL} {
+    width: 100%;
+    height: 100%;
+  }
+  @media ${device.tablet} {
+    width: 100%;
+    height: 100%;
+  }
+  @media ${device.laptop} {
+    width: 50em;
+    height: 40em;
+  }
+  @media ${device.laptopL} {
+    width: 50em;
+    height: 40em;
+  }
+  @media ${device.desktop} {
+    width: 50em;
+    height: 40em;
+  }
   display: grid;
   grid-template-areas: 'header' 'section';
   grid-template-rows: 4em 1fr;

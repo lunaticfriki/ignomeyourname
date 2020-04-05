@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import Montserrat from '../assets/fonts/Montserrat-Regular.ttf'
+
+import { device } from '../devices'
 import { colors } from '../components/colors'
 
 export const LayoutContainer = styled.div`
@@ -7,7 +9,7 @@ export const LayoutContainer = styled.div`
   min-height: 100vh;
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
-  grid-template-columns: 80vw;
+  grid-template-columns: 100%;
   grid-template-rows: 9em 1fr 5em;
   background-color: ${colors.genericDark};
   color: ${colors.genericLight};
@@ -17,13 +19,54 @@ export const LayoutContainer = styled.div`
   }
   font-family: 'Montserrat';
   h1 {
-    font-size: 30px;
+    @media ${device.mobileS} {
+      font-size: 22px;
+    }
+    @media ${device.mobileM} {
+      font-size: 22px;
+    }
+    @media ${device.mobileL} {
+      font-size: 22px;
+    }
+    @media ${device.tablet} {
+      font-size: 35px;
+    }
+    @media ${device.laptop} {
+      font-size: 40px;
+    }
+    @media ${device.laptopL} {
+      font-size: 45px;
+    }
+    @media ${device.desktop} {
+      font-size: 50px;
+    }
     line-height: 1.4;
     font-weight: normal;
     font-stretch: normal;
     color: ${colors.genericTitle};
   }
   h2 {
+    @media ${device.mobileS} {
+      font-size: 12px;
+    }
+    @media ${device.mobileM} {
+      font-size: 12px;
+    }
+    @media ${device.mobileL} {
+      font-size: 12px;
+    }
+    @media ${device.tablet} {
+      font-size: 15px;
+    }
+    @media ${device.laptopL} {
+      font-size: 20px;
+    }
+    @media ${device.laptopL} {
+      font-size: 20px;
+    }
+    @media ${device.desktop} {
+      font-size: 25px;
+    }
     font-size: 20px;
     line-height: 1.4;
     font-weight: normal;
@@ -51,6 +94,10 @@ export const LayoutContainer = styled.div`
     margin: 1em;
     cursor: pointer;
     &:hover {
+      background: ${colors.genericHover};
+      border: 1px solid ${colors.genericDark};
+    }
+    &:active {
       background: ${colors.genericHover};
       border: 1px solid ${colors.genericDark};
     }

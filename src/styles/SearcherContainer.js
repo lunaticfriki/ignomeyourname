@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SearcherContainer = styled.div`
-  width: 20%;
+  width: 100%;
   padding: 1em;
   display: flex;
   flex-direction: column;

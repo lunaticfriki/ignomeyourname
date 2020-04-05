@@ -11,8 +11,6 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: ${colors.genericDark};
-  position: sticky;
-  bottom: 0;
   i {
     color: ${colors.genericTitle};
   }
