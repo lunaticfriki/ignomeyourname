@@ -5,10 +5,10 @@ exports[`App component suite App snapshot 1`] = `
   className="sc-AxjAm lauOEi App"
 >
   <div
-    className="sc-AxhCb bBboiP"
+    className="sc-AxhCb iCgYvc"
   >
     <div
-      className="sc-AxirZ jtCEdU"
+      className="sc-AxirZ dzamCP"
     >
       <a
         aria-current="page"
@@ -112,7 +112,7 @@ exports[`App component suite App snapshot 1`] = `
           </form>
         </div>
         <div
-          className="sc-AxheI IA-dHK"
+          className="sc-AxheI cpImOa"
         />
       </div>
     </div>
