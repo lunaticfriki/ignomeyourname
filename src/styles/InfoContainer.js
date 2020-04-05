@@ -8,6 +8,34 @@ export const InfoContainer = styled.div`
   padding: 1em;
   display: flex;
   justify-content: center;
+  .c-no-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      @media ${device.mobileS} {
+        width: 300px;
+      }
+      @media ${device.mobileM} {
+        width: 300px;
+      }
+      @media ${device.mobileL} {
+        width: 400px;
+      }
+      @media ${device.tablet} {
+        width: 400px;
+      }
+      @media ${device.laptop} {
+        width: 600px;
+      }
+      @media ${device.laptopL} {
+        width: 600px;
+      }
+      @media ${device.desktop} {
+        width: 700px;
+      }
+    }
+  }
   .c-info-card {
     flex-direction: column;
     width: 100%;
@@ -50,25 +78,25 @@ export const InfoContainer = styled.div`
       }
       img {
         @media ${device.mobileS} {
-          width: 13em;
+          width: 100%;
         }
         @media ${device.mobileM} {
-          width: 13em;
+          width: 100%;
         }
         @media ${device.mobileL} {
-          width: 13em;
+          width: 100%;
         }
         @media ${device.tablet} {
-          width: 20em;
+          width: 100%;
         }
         @media ${device.laptop} {
-          width: 20em;
+          width: 30em;
         }
         @media ${device.laptopL} {
-          width: 20em;
+          width: 30em;
         }
         @media ${device.desktop} {
-          width: 20em;
+          width: 30em;
         }
       }
     }

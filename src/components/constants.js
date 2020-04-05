@@ -14,10 +14,6 @@ export const translations = {
   aboutPhotoText: 'Photo by David Brooke Martin on Unsplash',
   aboutPhotoUrl: 'https://unsplash.com/photos/50cGSHm1Jro',
 
-  //main
-  mainTitle: '',
-  mainubtitle: '',
-
   // searcher
   sideSearcherTitle: 'SEARCHER',
   sideSearcherOptionDefault: ' Choose your gnome!',
@@ -25,7 +21,7 @@ export const translations = {
   sideSearcherSubmitButton: 'Search!',
 
   //info
-  noInfo: 'Select a gnome',
+  noInfo: 'Please, select a gnome',
   gnomeAge: 'Age: ',
   gnomeWeight: 'Weight: ',
   gnomeHeight: 'Height: ',
@@ -34,11 +30,12 @@ export const translations = {
   gnomeFriends: 'Friends: ',
 
   //gallery
-  galleryTitle: '',
+  galleryNext: 'Show next',
+  galleryPrevious: 'Show previous',
 
   //footer
   footerSignature: 'oscar ventura -',
   footerMessage: 'gnome searcher',
 
-  year: new Date().getFullYear()
+  year: new Date().getFullYear(),
 }

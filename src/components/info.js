@@ -2,6 +2,7 @@ import React from 'react'
 
 import { InfoContainer } from '../styles/InfoContainer'
 import { translations } from './constants'
+import image from '../assets/images/anton-vorobiev.jpg'
 
 const Info = ({ gnomes, gnome }) => {
   const { noInfo, gnomeAge, gnomeWeight, gnomeHeight, gnomeHaircolor, gnomeProfessions, gnomeFriends } = translations
@@ -9,7 +10,10 @@ const Info = ({ gnomes, gnome }) => {
   return (
     <InfoContainer>
       {gnome.length === 0 ? (
-        <p>{noInfo}</p>
+        <div className="c-no-info">
+          <p>{noInfo}</p>
+          <img src={image} alt={noInfo} />
+        </div>
       ) : (
         gnomes.map(
           (el) =>

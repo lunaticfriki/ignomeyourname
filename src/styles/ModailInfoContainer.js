@@ -48,7 +48,7 @@ export const ModalInfoContainer = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid ${colors.genericTitle};
+  /* border: 2px solid ${colors.genericTitle}; */
   box-shadow: 1px 2px 5px black;
   z-index: 2;
   overflow-y: scroll;

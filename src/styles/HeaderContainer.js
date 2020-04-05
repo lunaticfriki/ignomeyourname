@@ -41,23 +41,21 @@ export const HeaderContainer = styled.div`
     display: flex;
   }
   li {
-    align-self: flex-end;
-    padding-inline-end: 1em;
-    cursor: pointer;
+    list-style: none;
     @media ${device.mobileS} {
-      font-size: 12px;
+      font-size: 16px;
     }
     @media ${device.mobileM} {
-      font-size: 12px;
+      font-size: 16px;
     }
     @media ${device.mobileL} {
-      font-size: 12px;
+      font-size: 16px;
     }
     @media ${device.tablet} {
       font-size: 16px;
     }
     @media ${device.laptop} {
-      font-size: 16px;
+      font-size: 18px;
     }
     @media ${device.laptopL} {
       font-size: 18px;
@@ -65,5 +63,8 @@ export const HeaderContainer = styled.div`
     @media ${device.desktop} {
       font-size: 20px;
     }
+    align-self: flex-end;
+    padding-inline-end: 1em;
+    cursor: pointer;
   }
 `

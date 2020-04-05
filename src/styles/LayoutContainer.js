@@ -94,7 +94,6 @@ export const LayoutContainer = styled.div`
     font-stretch: normal;
   }
   li {
-    list-style: none;
     &:hover {
       color: ${colors.genericHover};
     }
@@ -116,10 +115,6 @@ export const LayoutContainer = styled.div`
     padding: 1em;
     cursor: pointer;
     &:hover {
-      background: ${colors.genericHover};
-      border: 1px solid ${colors.genericDark};
-    }
-    &:active {
       background: ${colors.genericHover};
       border: 1px solid ${colors.genericDark};
     }

@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 import { GalleryContainer } from '../styles/GalleryContainer'
+
+import { translations } from './constants'
 import Info from './info'
 import ModalInfo from './modalInfo'
 import useOnClick from '../hooks/useOnClick'
 
 const Gallery = ({ gnomes, gnome, setGnome }) => {
+  const { galleryNext, galleryPrevious } = translations
+
   const [imagesDisplayed, setImagesDisplayed] = useState(0)
   const [moreImages, setMoreImages] = useState(20)
   const [showModal, setShowModal] = useState(false)
@@ -31,11 +35,11 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
       <div className="c-gallery-menu">
         {imagesDisplayed !== 0 && (
           <div>
-            <button onClick={previousImages}>Show previous</button>
+            <button onClick={previousImages}>{galleryPrevious}</button>
           </div>
         )}
         <div>
-          <button onClick={showMoreImages}>Show more</button>
+          <button onClick={showMoreImages}>{galleryNext}</button>
         </div>
       </div>
       <section>
