@@ -107,12 +107,13 @@ export const LayoutContainer = styled.div`
     font-size: 12px;
   }
   button {
-    width: 7em;
-    height: 2em;
+    width: 9em;
+    height: 4em;
     background: ${colors.genericDark};
     color: ${colors.genericLight};
     border: 1px solid ${colors.genericHover};
     margin: 1em;
+    padding: 1em;
     cursor: pointer;
     &:hover {
       background: ${colors.genericHover};

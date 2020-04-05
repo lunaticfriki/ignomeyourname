@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import { GalleryContainer } from '../styles/GalleryContainer'
 import Info from './info'
@@ -16,15 +16,16 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
   const previousImages = () => {
     setImagesDisplayed(imagesDisplayed - 20)
     setMoreImages(moreImages - 20)
-    window.scrollTo(0, 0)
   }
   const showMoreImages = () => {
     setImagesDisplayed(imagesDisplayed + 20)
     setMoreImages(moreImages + 20)
-    window.scrollTo(0, 0)
   }
   const ref = useRef()
   useOnClick(ref, () => setShowModal(false))
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   return (
     <GalleryContainer>
       <div className="c-gallery-menu">
