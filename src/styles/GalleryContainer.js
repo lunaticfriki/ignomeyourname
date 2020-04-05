@@ -48,16 +48,16 @@ export const GalleryContainer = styled.div`
   .c-gallery-mosaic {
     article {
       @media ${device.mobileS} {
-        width: 5em;
-        height: 5em;
+        width: 8em;
+        height: 8em;
       }
       @media ${device.mobileM} {
-        width: 5em;
-        height: 5em;
+        width: 8em;
+        height: 8em;
       }
       @media ${device.mobileL} {
-        width: 5em;
-        height: 5em;
+        width: 8em;
+        height: 8em;
       }
       @media ${device.tablet} {
         width: 30em;
@@ -82,16 +82,16 @@ export const GalleryContainer = styled.div`
     img {
       border: 2px solid ${colors.genericTitle};
       @media ${device.mobileS} {
-        width: 5em;
-        height: 5em;
+        width: 8em;
+        height: 8em;
       }
       @media ${device.mobileM} {
-        width: 5em;
-        height: 5em;
+        width: 8em;
+        height: 8em;
       }
       @media ${device.mobileL} {
-        width: 5em;
-        height: 5em;
+        width: 8em;
+        height: 8em;
       }
       @media ${device.tablet} {
         width: 30em;
