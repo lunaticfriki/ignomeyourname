@@ -153,7 +153,6 @@ export const GalleryContainer = styled.div`
     }
     img {
       width: 100%;
-      transition: 1s;
       cursor: pointer;
     }
     &:hover {
@@ -161,7 +160,6 @@ export const GalleryContainer = styled.div`
         color: ${colors.genericHover};
       }
       img {
-        transition: 1s;
         opacity: 0.5;
         transform: scale(1.5);
       }
