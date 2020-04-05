@@ -12,7 +12,7 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
 
   const [mosaic, setMosaic] = useState(false)
   const [imagesDisplayed, setImagesDisplayed] = useState(0)
-  const [moreImages, setMoreImages] = useState(20)
+  const [moreImages, setMoreImages] = useState(24)
   const [showModal, setShowModal] = useState(false)
   const showMosaic = () => {
     setMosaic(!mosaic)
@@ -22,12 +22,12 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
     setShowModal(true)
   }
   const previousImages = () => {
-    setImagesDisplayed(imagesDisplayed - 20)
-    setMoreImages(moreImages - 20)
+    setImagesDisplayed(imagesDisplayed - 24)
+    setMoreImages(moreImages - 24)
   }
   const showMoreImages = () => {
-    setImagesDisplayed(imagesDisplayed + 20)
-    setMoreImages(moreImages + 20)
+    setImagesDisplayed(imagesDisplayed + 24)
+    setMoreImages(moreImages + 24)
   }
   const ref = useRef()
   useOnClick(ref, () => setShowModal(false))

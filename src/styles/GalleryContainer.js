@@ -80,7 +80,7 @@ export const GalleryContainer = styled.div`
       margin: 0;
     }
     img {
-      border: 2px solid ${colors.genericTitle};
+      border: 1px solid ${colors.genericTitle};
       @media ${device.mobileS} {
         width: 8em;
         height: 8em;
@@ -137,7 +137,6 @@ export const GalleryContainer = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: -8px;
   }
   article {
     width: 30em;
