@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import { device } from '../devices'
 import { colors } from '../components/colors'
 
 export const HeaderContainer = styled.div`

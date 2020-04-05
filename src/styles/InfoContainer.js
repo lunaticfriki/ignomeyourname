@@ -95,10 +95,7 @@ export const InfoContainer = styled.div`
       }
     }
     .c-info-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
+      columns: 2;
       p {
         padding-block-start: 0.5em;
       }

@@ -2,13 +2,13 @@
 
 exports[`App component suite App snapshot 1`] = `
 <div
-  className="App"
+  className="sc-AxjAm lauOEi App"
 >
   <div
-    className="sc-AxiKw glfEax"
+    className="sc-AxhCb fjSagE"
   >
     <div
-      className="sc-AxjAm emQxea"
+      className="sc-AxirZ htmSjt"
     >
       <a
         aria-current="page"
@@ -79,10 +79,10 @@ exports[`App component suite App snapshot 1`] = `
       tabIndex="-1"
     >
       <div
-        className="sc-AxhCb eHvKPQ"
+        className="sc-AxhUy cuGvRN"
       >
         <div
-          className="sc-AxhUy ifQeDL"
+          className="sc-AxgMl cgccNm"
         >
           <form
             onSubmit={[Function]}
@@ -112,12 +112,12 @@ exports[`App component suite App snapshot 1`] = `
           </form>
         </div>
         <div
-          className="sc-AxgMl eMMsbF"
+          className="sc-AxheI kpTomM"
         />
       </div>
     </div>
     <div
-      className="sc-AxirZ hwMGtO"
+      className="sc-AxiKw llWKsH"
     >
       <i>
         oscar ventura - gnome searcher - 2020
