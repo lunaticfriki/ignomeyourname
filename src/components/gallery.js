@@ -10,9 +10,13 @@ import useOnClick from '../hooks/useOnClick'
 const Gallery = ({ gnomes, gnome, setGnome }) => {
   const { galleryNext, galleryPrevious } = translations
 
+  const [mosaic, setMosaic] = useState(false)
   const [imagesDisplayed, setImagesDisplayed] = useState(0)
   const [moreImages, setMoreImages] = useState(20)
   const [showModal, setShowModal] = useState(false)
+  const showMosaic = () => {
+    setMosaic(!mosaic)
+  }
   const viewInfo = (id) => {
     setGnome(id)
     setShowModal(true)
@@ -41,8 +45,11 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
         <div>
           <button onClick={showMoreImages}>{galleryNext}</button>
         </div>
+        <button onClick={showMosaic} id="mosaic">
+          {!mosaic ? <i className="fas fa-th"></i> : <i className="far fa-square"></i>}
+        </button>
       </div>
-      <section>
+      <section className={mosaic && 'c-gallery-mosaic'}>
         {gnomes.slice(imagesDisplayed, moreImages).map((gn) => (
           <article key={gn.id} onClick={() => viewInfo(gn)}>
             <p>{gn.name}</p>
