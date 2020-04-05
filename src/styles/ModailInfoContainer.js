@@ -52,6 +52,7 @@ export const ModalInfoContainer = styled.div`
   border: 1px solid ${colors.genericTitle};
   box-shadow: 1px 2px 5px black;
   z-index: 2;
+  overflow-y: scroll;
   header {
     grid-area: header;
     display: flex;

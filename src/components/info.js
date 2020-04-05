@@ -20,32 +20,40 @@ const Info = ({ gnomes, gnome }) => {
                   <img src={el.thumbnail} alt={el.name}></img>
                 </div>
                 <div className="c-info-content">
-                  <p>
-                    {gnomeAge} {el.age}
-                  </p>
-                  <p>
-                    {gnomeWeight} {el.weight.toFixed(1)}
-                  </p>
-                  <p>
-                    {gnomeHeight}
-                    {el.height.toFixed(1)}
-                  </p>
-                  <p>
-                    {gnomeHaircolor}
-                    {el.hair_color}
-                  </p>
-                  <p>{gnomeProfessions}</p>
-                  <ul>
-                    {el.professions.map((prof, idx) => (
-                      <li key={idx}>{prof}</li>
-                    ))}
-                  </ul>
-                  <p>{gnomeFriends}</p>
-                  <ul>
-                    {el.professions.map((friend, idx) => (
-                      <li key={idx}>{friend}</li>
-                    ))}
-                  </ul>
+                  <article className="c-article-main-info">
+                    <p>
+                      <span>{gnomeAge}</span> {el.age}
+                    </p>
+                    <p>
+                      <span>{gnomeWeight}</span> {el.weight.toFixed(1)}
+                    </p>
+                    <p>
+                      <span>{gnomeHeight}</span>
+                      {el.height.toFixed(1)}
+                    </p>
+                    <p>
+                      <span>{gnomeHaircolor}</span>
+                      {el.hair_color}
+                    </p>
+                  </article>
+                  <article className="c-article-extra-info">
+                    <p>
+                      <span>{gnomeProfessions}</span>
+                    </p>
+                    <ul>
+                      {el.professions.map((prof, idx) => (
+                        <li key={idx}>{prof}</li>
+                      ))}
+                    </ul>
+                    <p>
+                      <span>{gnomeFriends}</span>
+                    </p>
+                    <ul>
+                      {el.professions.map((friend, idx) => (
+                        <li key={idx}>{friend}</li>
+                      ))}
+                    </ul>
+                  </article>
                 </div>
               </div>
             )

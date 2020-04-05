@@ -7,9 +7,23 @@
 html {
 scrollbar-width: none;
 background-color: black;
+overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;
+  width: 8px;
 }
+
+::-webkit-scrollbar-track {
+  background: #d62b9a;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b80b7b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d62b9a;
+} 

@@ -2,7 +2,7 @@
 
 exports[`Footer component suite Searcher snapshot 1`] = `
 <div
-  className="sc-AxjAm dpccUt"
+  className="sc-AxjAm iQPtOi"
 >
   <form
     onSubmit={[Function]}
