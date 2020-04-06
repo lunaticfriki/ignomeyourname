@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searcher component suite Searcher snapshot 1`] = `
+<div
+  className="sc-AxjAm ipJLPT"
+>
+  <div
+    className="c-gallery-menu"
+  >
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        Show next
+      </button>
+    </div>
+    <button
+      id="mosaic"
+      onClick={[Function]}
+    >
+      <i
+        className="fas fa-th"
+      />
+    </button>
+  </div>
+  <section
+    className=""
+  />
+  <div
+    className="c-gallery-menu"
+  >
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        Show more
+      </button>
+    </div>
+  </div>
+</div>
+`;

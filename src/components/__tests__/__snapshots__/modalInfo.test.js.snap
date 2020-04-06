@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searcher component suite Searcher snapshot 1`] = `
+<div
+  className="sc-AxjAm jnvo"
+>
+  <div
+    className="c-no-info"
+  >
+    <p>
+      Please, select a gnome
+    </p>
+    <a
+      href="https://unsplash.com/photos/xXs6qC7yBao"
+      target="blank"
+    >
+      <img
+        alt="Please, select a gnome"
+        src="anton-vorobiev.jpg"
+      />
+    </a>
+    <i>
+      Photo by Anton Vorobiev
+    </i>
+  </div>
+</div>
+`;

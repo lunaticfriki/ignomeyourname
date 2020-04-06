@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { InfoContainer } from '../styles/InfoContainer'
 import { translations } from './constants'
@@ -81,3 +82,13 @@ const Info = ({ gnomes, gnome }) => {
 }
 
 export default Info
+
+Info.propTypes = {
+  gnomes: PropTypes.array,
+  gnome: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+}
+
+Info.defaultProps = {
+  gnomes: [],
+  gnome: '',
+}

@@ -49,7 +49,7 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
           {!mosaic ? <i className="fas fa-th"></i> : <i className="far fa-square"></i>}
         </button>
       </div>
-      <section className={mosaic && 'c-gallery-mosaic'}>
+      <section className={mosaic ? 'c-gallery-mosaic' : ''}>
         {gnomes.slice(imagesDisplayed, moreImages).map((gn) => (
           <article key={gn.id} onClick={() => viewInfo(gn)}>
             <p>{gn.name}</p>
