@@ -15,7 +15,7 @@ describe('Searcher component suite', () => {
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })
-  test('Should trigger a function on submit', () => {
+  test('Should trigger a function on submit to update', () => {
     const button = wrapperMount.find('button')
     button.simulate('click')
     expect(dummyProps.setGnome.mock.calls).toEqual([])

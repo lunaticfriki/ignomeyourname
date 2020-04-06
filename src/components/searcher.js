@@ -7,15 +7,15 @@ import { translations } from './constants'
 
 const Searcher = ({ gnomes, setGnome }) => {
   const { sideSearcherSubmitButton, sideSearcherSelectTitle } = translations
-
   const [yourGnome, GnomeDropdown] = useGnome(sideSearcherSelectTitle, gnomes)
-  const submit = (e) => {
+
+  const submitInfo = (e) => {
     e.preventDefault()
     setGnome(yourGnome)
   }
   return (
     <SearcherContainer>
-      <form onSubmit={submit}>
+      <form onSubmit={submitInfo}>
         <GnomeDropdown />
         <button>{sideSearcherSubmitButton}</button>
       </form>
@@ -27,8 +27,10 @@ export default Searcher
 
 Searcher.propTypes = {
   gnomes: PropTypes.array,
+  setGnome: PropTypes.func,
 }
 
 Searcher.defaultProps = {
   gnomes: [],
+  setGnome: () => {},
 }
