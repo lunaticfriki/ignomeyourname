@@ -32,3 +32,36 @@ exports[`Footer component suite Searcher snapshot 1`] = `
   </form>
 </div>
 `;
+
+exports[`Searcher component suite Searcher snapshot 1`] = `
+<div
+  className="sc-AxjAm iQPtOi"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      className="c-use-gnome"
+      htmlFor="use-gnome-findyour gnome"
+    >
+      Find your gnome
+      <select
+        disabled={true}
+        id="use-gnome-findyour gnome"
+        onBlur={[Function]}
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          hidden={true}
+        >
+           Choose your gnome!
+        </option>
+      </select>
+    </label>
+    <button>
+      Search!
+    </button>
+  </form>
+</div>
+`;

@@ -22,6 +22,8 @@ export const translations = {
 
   //info
   noInfo: 'Please, select a gnome',
+  noInfoPhotoUrl: 'https://unsplash.com/photos/xXs6qC7yBao',
+  noInfoPhotoText: 'Photo by Anton Vorobiev',
   gnomeAge: 'Age: ',
   gnomeWeight: 'Weight: ',
   gnomeHeight: 'Height: ',

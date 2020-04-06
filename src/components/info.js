@@ -5,14 +5,27 @@ import { translations } from './constants'
 import image from '../assets/images/anton-vorobiev.jpg'
 
 const Info = ({ gnomes, gnome }) => {
-  const { noInfo, gnomeAge, gnomeWeight, gnomeHeight, gnomeHaircolor, gnomeProfessions, gnomeFriends } = translations
+  const {
+    noInfo,
+    gnomeAge,
+    gnomeWeight,
+    gnomeHeight,
+    gnomeHaircolor,
+    gnomeProfessions,
+    gnomeFriends,
+    noInfoPhotoUrl,
+    noInfoPhotoText,
+  } = translations
 
   return (
     <InfoContainer>
       {gnome.length === 0 ? (
         <div className="c-no-info">
           <p>{noInfo}</p>
-          <img src={image} alt={noInfo} />
+          <a href={noInfoPhotoUrl} target="blank">
+            <img src={image} alt={noInfo} />
+          </a>
+          <i>{noInfoPhotoText}</i>
         </div>
       ) : (
         gnomes.map(
