@@ -11,14 +11,15 @@ const useGnome = (label, options) => {
     <label htmlFor={id} className="c-use-gnome">
       {label}
       <select
+        data-testid={id}
         id={id}
         value={state}
-        onChange={e => setState(e.target.value)}
-        onBlur={e => setState(e.target.value)}
+        onChange={(e) => setState(e.target.value)}
+        onBlur={(e) => setState(e.target.value)}
         disabled={!options.length}
       >
         <option hidden={true}>{sideSearcherOptionDefault}</option>
-        {options.map(item => (
+        {options.map((item) => (
           <option key={item.id} value={item.name}>
             {item.name}
           </option>

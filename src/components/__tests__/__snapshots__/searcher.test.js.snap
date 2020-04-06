@@ -13,6 +13,7 @@ exports[`Searcher component suite Searcher snapshot 1`] = `
     >
       Find your gnome
       <select
+        data-testid="use-gnome-findyour gnome"
         disabled={true}
         id="use-gnome-findyour gnome"
         onBlur={[Function]}

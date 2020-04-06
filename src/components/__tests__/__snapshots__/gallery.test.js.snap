@@ -7,14 +7,13 @@ exports[`Searcher component suite Searcher snapshot 1`] = `
   <div
     className="c-gallery-menu"
   >
-    <div>
-      <button
-        onClick={[Function]}
-      >
-        Show next
-      </button>
-    </div>
     <button
+      onClick={[Function]}
+    >
+      Show next
+    </button>
+    <button
+      data-testid="mosaic"
       id="mosaic"
       onClick={[Function]}
     >
@@ -24,7 +23,7 @@ exports[`Searcher component suite Searcher snapshot 1`] = `
     </button>
   </div>
   <section
-    className=""
+    className="c-display"
   />
   <div
     className="c-gallery-menu"
