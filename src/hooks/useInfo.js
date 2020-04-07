@@ -12,9 +12,10 @@ const useInfo = (gnomes, gnome) => {
     setShowModal(!showModal)
   }
 
-  const Modal = () => {
-    const ref = useRef()
-    useOnClick(ref, () => setShowModal(false))
+  const ref = useRef()
+  useOnClick(ref, () => setShowModal(false))
+
+  const Modal = React.forwardRef((props, ref) => {
     return (
       <ModalInfo ref={ref}>
         <header>
@@ -27,7 +28,7 @@ const useInfo = (gnomes, gnome) => {
         </section>
       </ModalInfo>
     )
-  }
+  })
   return { viewInfo, Modal, showModal }
 }
 
