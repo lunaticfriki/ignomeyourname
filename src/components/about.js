@@ -9,12 +9,14 @@ const About = () => {
 
   return (
     <AboutContainer>
-      <h3>{aboutTitle}</h3>
-      <article>{aboutArticle}</article>
-      <a href={aboutPhotoUrl} target="blank">
-        <img src={image} alt="gnome" />
-      </a>
-      <i>{aboutPhotoText}</i>
+      <div className="c-about">
+        <h3>{aboutTitle}</h3>
+        <article>{aboutArticle}</article>
+        <a href={aboutPhotoUrl} target="blank">
+          <img src={image} alt="gnome" />
+        </a>
+        <i>{aboutPhotoText}</i>
+      </div>
     </AboutContainer>
   )
 }
