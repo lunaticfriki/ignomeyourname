@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const ImageCard = ({ gn, handleModalInfo }) => {
   const selectGnome = () => {
@@ -15,3 +16,13 @@ const ImageCard = ({ gn, handleModalInfo }) => {
 }
 
 export default ImageCard
+
+ImageCard.propTypes = {
+  gn: PropTypes.object,
+  handleModalInfo: PropTypes.func,
+}
+
+ImageCard.defaultProps = {
+  gn: {},
+  handleModalInfo: () => {},
+}
