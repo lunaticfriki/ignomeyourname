@@ -67,7 +67,7 @@ const Info = ({ gnomes, gnome }) => {
                       <span>{gnomeFriends}</span>
                     </p>
                     <ul>
-                      {el.professions.map((friend, idx) => (
+                      {el.friends.map((friend, idx) => (
                         <li key={idx}>{friend}</li>
                       ))}
                     </ul>
