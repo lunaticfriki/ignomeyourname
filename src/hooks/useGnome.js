@@ -19,11 +19,13 @@ const useGnome = (label, options) => {
         disabled={!options.length}
       >
         <option hidden={true}>{sideSearcherOptionDefault}</option>
-        {options.map((item) => (
-          <option key={item.id} value={item.name}>
-            {item.name}
-          </option>
-        ))}
+        {options
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((item) => (
+            <option key={item.id} value={item.name}>
+              {item.name}
+            </option>
+          ))}
       </select>
     </label>
   )
