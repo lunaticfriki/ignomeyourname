@@ -2,7 +2,7 @@
 
 exports[`Gallery component suite Gallery snapshot 1`] = `
 <div
-  className="sc-AxjAm ipJLPT"
+  className="sc-AxjAm gxJPRT"
 >
   <div
     className="c-gallery-menu"
@@ -13,6 +13,7 @@ exports[`Gallery component suite Gallery snapshot 1`] = `
       Show next
     </button>
     <button
+      className="c-button-mosaic"
       data-testid="mosaic"
       id="mosaic"
       onClick={[Function]}
