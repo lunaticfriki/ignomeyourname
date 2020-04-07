@@ -2,25 +2,29 @@
 
 exports[`About component suite About snapshot 1`] = `
 <div
-  className="sc-AxjAm dAFcgI"
+  className="sc-AxjAm jJdmDd"
 >
-  <h3>
-    Gnome me!
-  </h3>
-  <article>
-    Hi, I'm still searching the gender of all these gnomes...
-  </article>
-  <a
-    href="https://unsplash.com/photos/50cGSHm1Jro"
-    target="blank"
+  <div
+    className="c-about"
   >
-    <img
-      alt="gnome"
-      src="david-brooke-martin.jpg"
-    />
-  </a>
-  <i>
-    Photo by David Brooke Martin on Unsplash
-  </i>
+    <h3>
+      Gnome me!
+    </h3>
+    <article>
+      Hi, I'm still searching the gender of all these gnomes...
+    </article>
+    <a
+      href="https://unsplash.com/photos/50cGSHm1Jro"
+      target="blank"
+    >
+      <img
+        alt="gnome"
+        src="david-brooke-martin.jpg"
+      />
+    </a>
+    <i>
+      Photo by David Brooke Martin on Unsplash
+    </i>
+  </div>
 </div>
 `;
