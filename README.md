@@ -18,7 +18,7 @@ To run the test enter:
 
 Launches the test runner in the interactive watch mode.
 
-To run Cypres tests you can enter:
+To run Cypress tests you can enter:
 
 ### `yarn cy`
 
