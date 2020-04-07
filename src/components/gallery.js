@@ -30,7 +30,7 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
       <div className="c-gallery-menu">
         {imagesDisplayed !== 0 && <button onClick={previousImages}>{galleryPrevious}</button>}
         <button onClick={nextImages}>{galleryNext}</button>
-        <button onClick={showMosaic} id="mosaic" data-testid="mosaic">
+        <button onClick={showMosaic} id="mosaic" data-testid="mosaic" className="c-button-mosaic">
           {!mosaic ? <i className="fas fa-th"></i> : <i className="far fa-square"></i>}
         </button>
       </div>

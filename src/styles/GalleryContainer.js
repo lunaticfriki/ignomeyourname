@@ -16,7 +16,7 @@ export const GalleryContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
-  #mosaic {
+  .c-button-mosaic {
     border: none;
     padding: 0;
     margin: 0;
@@ -48,15 +48,15 @@ export const GalleryContainer = styled.div`
   .c-gallery-mosaic {
     article {
       @media ${device.mobileS} {
-        width: 8em;
+        width: 50%;
         height: 8em;
       }
       @media ${device.mobileM} {
-        width: 8em;
+        width: 50%;
         height: 8em;
       }
       @media ${device.mobileL} {
-        width: 8em;
+        width: 50%;
         height: 8em;
       }
       @media ${device.tablet} {
@@ -82,16 +82,13 @@ export const GalleryContainer = styled.div`
     img {
       border: 1px solid ${colors.genericTitle};
       @media ${device.mobileS} {
-        width: 8em;
-        height: 8em;
+        width: 100%;
       }
       @media ${device.mobileM} {
-        width: 8em;
-        height: 8em;
+        width: 100%;
       }
       @media ${device.mobileL} {
-        width: 8em;
-        height: 8em;
+        width: 100%;
       }
       @media ${device.tablet} {
         width: 30em;
