@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searcher component suite ImageCard snapshot 1`] = `
+<article
+  onClick={[Function]}
+>
+  <p />
+  <div
+    className="c-image"
+  >
+    <img />
+  </div>
+</article>
+`;

@@ -6,7 +6,7 @@ import About from '../about'
 import { translations } from '../constants'
 import image from '../../assets/images/david-brooke-martin.jpg'
 
-describe('Footer component suite', () => {
+describe('About component suite', () => {
   const { aboutTitle, aboutArticle, aboutPhotoText } = translations
   const wrapperMount = mount(<About />)
   test('About snapshot', () => {

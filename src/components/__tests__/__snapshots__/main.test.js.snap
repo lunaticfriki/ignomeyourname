@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main component suite Main snapshot 1`] = `
+<div
+  className="sc-AxjAm eVkhsz"
+>
+  <div
+    className="sc-AxirZ kviWPR"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <label
+        className="c-use-gnome"
+        htmlFor="use-gnome-findyour gnome"
+      >
+        Find your gnome
+        <select
+          data-testid="use-gnome-findyour gnome"
+          disabled={true}
+          id="use-gnome-findyour gnome"
+          onBlur={[Function]}
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            hidden={true}
+          >
+             Choose your gnome!
+          </option>
+        </select>
+      </label>
+      <button>
+        Search!
+      </button>
+    </form>
+  </div>
+  <div
+    className="sc-AxiKw hlbvwP"
+  >
+    <div
+      className="c-no-info"
+    >
+      <p>
+        Please, select a gnome
+      </p>
+      <a
+        href="https://unsplash.com/photos/xXs6qC7yBao"
+        target="blank"
+      >
+        <img
+          alt="Please, select a gnome"
+          src="anton-vorobiev.jpg"
+        />
+      </a>
+      <i>
+        Photo by Anton Vorobiev
+      </i>
+    </div>
+  </div>
+</div>
+`;

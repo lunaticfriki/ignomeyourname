@@ -5,6 +5,8 @@ import { GalleryContainer } from '../styles/GalleryContainer'
 
 import { translations } from './constants'
 
+import ImageCard from './image-card'
+
 import useImages from '../hooks/useImages'
 import useMosaic from '../hooks/useMosaic'
 import useInfo from '../hooks/useInfo'
@@ -14,12 +16,15 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
 
   const { imagesDisplayed, moreImages, previousImages, nextImages } = useImages()
   const { showMosaic, mosaic } = useMosaic()
-  const { viewInfo, Modal, showModal } = useInfo(gnomes, gnome, setGnome)
+  const { viewInfo, Modal, showModal } = useInfo(gnomes, gnome)
 
   useEffect(() => {
     window.scrollTo(0, 0)
   })
-
+  const handleModalInfo = (id) => {
+    viewInfo()
+    setGnome(id)
+  }
   return (
     <GalleryContainer>
       <div className="c-gallery-menu">
@@ -31,12 +36,7 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
       </div>
       <section className={mosaic ? 'c-gallery-mosaic' : 'c-display'}>
         {gnomes.slice(imagesDisplayed, moreImages).map((gn) => (
-          <article key={gn.id} onClick={() => viewInfo(gn)}>
-            <p>{gn.name}</p>
-            <div className="c-image">
-              <img src={gn.thumbnail} alt={gn.name} />
-            </div>
-          </article>
+          <ImageCard gn={gn} setGnome={setGnome} key={gn.id} handleModalInfo={handleModalInfo} />
         ))}
         {showModal && <Modal />}
       </section>

@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component suite Layout snapshot 1`] = `
+<div
+  className="sc-AxiKw cZthxE"
+>
+  <div
+    className="sc-AxjAm RhMFK"
+  >
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#d62b9a",
+        }
+      }
+    >
+      <h1>
+        I GNOME YOUR NAME!
+      </h1>
+    </a>
+    <h2>
+      Search your favorite gnome from Brastlewark!
+    </h2>
+    <nav>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#d62b9a",
+          }
+        }
+      >
+        <li>
+          Searcher
+        </li>
+      </a>
+      <a
+        href="/gallery"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#fff",
+          }
+        }
+      >
+        <li>
+          Gallery
+        </li>
+      </a>
+      <a
+        href="/about"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "#fff",
+          }
+        }
+      >
+        <li>
+          About me
+        </li>
+      </a>
+    </nav>
+  </div>
+  <div
+    className="sc-AxirZ cmQgFr"
+  >
+    <i>
+      oscar ventura - gnome searcher - 2020
+    </i>
+  </div>
+</div>
+`;

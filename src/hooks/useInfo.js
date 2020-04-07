@@ -5,11 +5,10 @@ import Info from '../components/info'
 import ModalInfo from '../components/modalInfo'
 import useOnClick from './useOnClick'
 
-const useInfo = (gnomes, gnome, setGnome) => {
+const useInfo = (gnomes, gnome) => {
   const [showModal, setShowModal] = useState(false)
 
-  const viewInfo = (id) => {
-    setGnome(id)
+  const viewInfo = () => {
     setShowModal(!showModal)
   }
 

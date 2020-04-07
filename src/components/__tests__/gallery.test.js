@@ -8,7 +8,7 @@ import useImages from '../../hooks/useImages'
 import useMosaic from '../../hooks/useMosaic'
 import useInfo from '../../hooks/useInfo'
 
-describe('Searcher component suite', () => {
+describe('Gallery component suite', () => {
   const dummyProps = {
     gnomes: [],
     gnome: {},
@@ -19,7 +19,7 @@ describe('Searcher component suite', () => {
     jest.clearAllMocks()
   })
 
-  test('Searcher snapshot', () => {
+  test('Gallery snapshot', () => {
     const component = renderer.create(<Gallery {...dummyProps} />)
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()

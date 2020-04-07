@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer component suite About snapshot 1`] = `
+exports[`About component suite About snapshot 1`] = `
 <div
   className="sc-AxjAm dAFcgI"
 >
