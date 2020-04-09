@@ -1,11 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { useSelector } from 'react-redux'
 
 import { InfoContainer } from '../styles/InfoContainer'
 import { translations } from './constants'
 import image from '../assets/images/anton-vorobiev.jpg'
 
-const Info = ({ gnomes, gnome }) => {
+const Info = () => {
+  const gnomes = useSelector((state) => state.gnomesApi.gnomes.body)
+  const gnome = useSelector((state) => state.gnomesApi.gnome)
+
   const {
     noInfo,
     gnomeAge,
@@ -20,7 +23,7 @@ const Info = ({ gnomes, gnome }) => {
 
   return (
     <InfoContainer>
-      {gnome.length === 0 ? (
+      {gnome === '' ? (
         <div className="c-no-info">
           <p>{noInfo}</p>
           <a href={noInfoPhotoUrl} target="blank">
@@ -82,13 +85,3 @@ const Info = ({ gnomes, gnome }) => {
 }
 
 export default Info
-
-Info.propTypes = {
-  gnomes: PropTypes.array,
-  gnome: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-}
-
-Info.defaultProps = {
-  gnomes: [],
-  gnome: '',
-}

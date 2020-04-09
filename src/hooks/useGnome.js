@@ -4,7 +4,6 @@ import { translations } from '../components/constants'
 
 const useGnome = (label, options) => {
   const { sideSearcherOptionDefault } = translations
-
   const [state, setState] = useState('')
   const id = `use-gnome-${label.replace(' ', '').toLowerCase()}`
   const Dropdown = () => (
@@ -21,8 +20,8 @@ const useGnome = (label, options) => {
         <option hidden={true}>{sideSearcherOptionDefault}</option>
         {options
           .sort((a, b) => a.name.localeCompare(b.name))
-          .map((item) => (
-            <option key={item.id} value={item.name}>
+          .map((item, idx) => (
+            <option key={idx} value={item.name}>
               {item.name}
             </option>
           ))}

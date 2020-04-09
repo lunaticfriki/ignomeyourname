@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
-import PropTypes from 'prop-types'
+import { useSelector, useDispatch } from 'react-redux'
 
 import { GalleryContainer } from '../styles/GalleryContainer'
 
 import { translations } from './constants'
+import { setGnome } from '../actions/creators/gnomesAction'
 
 import ImageCard from './image-card'
 
@@ -11,7 +12,12 @@ import useImages from '../hooks/useImages'
 import useMosaic from '../hooks/useMosaic'
 import useInfo from '../hooks/useInfo'
 
-const Gallery = ({ gnomes, gnome, setGnome }) => {
+const Gallery = () => {
+  const gnomes = useSelector((state) => state.gnomesApi.gnomes.body)
+  const gnome = useSelector((state) => state.gnomesApi.gnome)
+
+  const dispatch = useDispatch()
+
   const { galleryNext, galleryPrevious } = translations
 
   const { imagesDisplayed, moreImages, previousImages, nextImages } = useImages()
@@ -23,7 +29,7 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
   })
   const handleModalInfo = (id) => {
     viewInfo()
-    setGnome(id)
+    dispatch(setGnome(id))
   }
   return (
     <GalleryContainer>
@@ -55,15 +61,3 @@ const Gallery = ({ gnomes, gnome, setGnome }) => {
 }
 
 export default Gallery
-
-Gallery.propTypes = {
-  gnomes: PropTypes.array,
-  gnome: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
-  setGnome: PropTypes.func,
-}
-
-Gallery.defaultProps = {
-  gnomes: [],
-  gnome: '',
-  setGnome: () => {},
-}

@@ -1,6 +1,8 @@
-import React, { useContext } from 'react'
+import React, { useEffect } from 'react'
 import { Router } from '@reach/router'
-import { GnomeContext } from './context/gnomeContext'
+import { Provider } from 'react-redux'
+import { fetchGnomes } from './actions/creators/gnomesAction'
+import store from './store'
 
 import { AppContainer } from './styles/AppContainer'
 
@@ -10,16 +12,23 @@ import About from './components/about'
 import Gallery from './components/gallery'
 
 const App = () => {
-  const { gnomes, gnome, setGnome, setGnomes } = useContext(GnomeContext)
+  async function initialDispatch() {
+    await store.dispatch(fetchGnomes())
+  }
+  useEffect(() => {
+    initialDispatch()
+  })
   return (
     <AppContainer className="App">
-      <Layout>
-        <Router>
-          <Main path="/" gnome={gnome} gnomes={gnomes} setGnome={setGnome} />
-          <About path="/about" />
-          <Gallery path="/gallery" gnome={gnome} gnomes={gnomes} setGnome={setGnome} setGnomes={setGnomes} />
-        </Router>
-      </Layout>
+      <Provider store={store}>
+        <Layout>
+          <Router>
+            <Main path="/" />
+            <About path="/about" />
+            <Gallery path="/gallery" />
+          </Router>
+        </Layout>
+      </Provider>
     </AppContainer>
   )
 }

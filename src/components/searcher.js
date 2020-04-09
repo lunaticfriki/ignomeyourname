@@ -1,18 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { setGnome, fetchGnomes } from '../actions/creators/gnomesAction'
 import { SearcherContainer } from '../styles/SearcherContainer'
 import useGnome from '../hooks/useGnome'
 import { translations } from './constants'
 
-const Searcher = ({ gnomes, setGnome }) => {
+const Searcher = () => {
+  const gnomes = useSelector((state) => state.gnomesApi.gnomes.body)
+  const dispatch = useDispatch()
   const { sideSearcherSubmitButton, sideSearcherSelectTitle } = translations
   const [yourGnome, GnomeDropdown] = useGnome(sideSearcherSelectTitle, gnomes)
 
   const submitInfo = (e) => {
     e.preventDefault()
-    setGnome(yourGnome)
+    dispatch(setGnome(yourGnome))
   }
+
+  useEffect(() => {
+    dispatch(fetchGnomes())
+  }, [dispatch, yourGnome])
+
   return (
     <SearcherContainer>
       <form onSubmit={submitInfo}>
@@ -24,13 +31,3 @@ const Searcher = ({ gnomes, setGnome }) => {
 }
 
 export default Searcher
-
-Searcher.propTypes = {
-  gnomes: PropTypes.array,
-  setGnome: PropTypes.func,
-}
-
-Searcher.defaultProps = {
-  gnomes: [],
-  setGnome: () => {},
-}

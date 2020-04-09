@@ -24,7 +24,7 @@ const useInfo = (gnomes, gnome) => {
           </button>
         </header>
         <section>
-          <Info gnomes={gnomes} gnome={gnome.name} />
+          <Info />
         </section>
       </ModalInfo>
     )
