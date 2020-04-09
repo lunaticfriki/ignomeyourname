@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+
 import { setGnome, fetchGnomes } from '../actions/creators/gnomesAction'
-import { SearcherContainer } from '../styles/SearcherContainer'
-import useGnome from '../hooks/useGnome'
+
 import { translations } from './constants'
+import { SearcherContainer } from '../styles/SearcherContainer'
+
+import useGnome from '../hooks/useGnome'
 
 const Searcher = () => {
   const gnomes = useSelector((state) => state.gnomesApi.gnomes.body)
