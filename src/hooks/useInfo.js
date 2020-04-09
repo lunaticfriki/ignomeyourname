@@ -5,7 +5,7 @@ import Info from '../components/info'
 import ModalInfo from '../components/modalInfo'
 import useOnClick from './useOnClick'
 
-const useInfo = (gnomes, gnome) => {
+const useInfo = () => {
   const [showModal, setShowModal] = useState(false)
 
   const viewInfo = () => {

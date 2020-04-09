@@ -29,7 +29,7 @@ const Gallery = () => {
   })
   const handleModalInfo = (id) => {
     viewInfo()
-    dispatch(setGnome(id))
+    dispatch(setGnome(id.name))
   }
   return (
     <GalleryContainer>
@@ -42,7 +42,7 @@ const Gallery = () => {
       </div>
       <section className={mosaic ? 'c-gallery-mosaic' : 'c-display'}>
         {gnomes.slice(imagesDisplayed, moreImages).map((gn) => (
-          <ImageCard gn={gn} setGnome={setGnome} key={gn.id} handleModalInfo={handleModalInfo} />
+          <ImageCard gn={gn} key={gn.id} handleModalInfo={handleModalInfo} />
         ))}
         {showModal && <Modal />}
       </section>
