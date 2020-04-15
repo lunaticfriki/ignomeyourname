@@ -1,18 +1,15 @@
 import React from 'react'
+import { Provider } from 'react-redux'
 import renderer from 'react-test-renderer'
-import { GnomeContext } from './context/gnomeContext'
 import App from './App'
+import store from './store/index'
 
 describe('App component suite', () => {
-  const gnomes = []
-  const gnome = {}
-  const setGnome = () => {}
-
   test('App snapshot', () => {
     const component = renderer.create(
-      <GnomeContext.Provider value={{ gnomes, gnome, setGnome }}>
+      <Provider store={store}>
         <App />
-      </GnomeContext.Provider>
+      </Provider>
     )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()

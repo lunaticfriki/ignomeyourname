@@ -114,7 +114,27 @@ exports[`App component suite App snapshot 1`] = `
         </div>
         <div
           className="sc-AxheI cpImOa"
-        />
+        >
+          <div
+            className="c-no-info"
+          >
+            <p>
+              Please, select a gnome
+            </p>
+            <a
+              href="https://unsplash.com/photos/xXs6qC7yBao"
+              target="blank"
+            >
+              <img
+                alt="Please, select a gnome"
+                src="anton-vorobiev.jpg"
+              />
+            </a>
+            <i>
+              Photo by Anton Vorobiev
+            </i>
+          </div>
+        </div>
       </div>
     </div>
     <div

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-
 import { setGnome, fetchGnomes } from '../actions/creators/gnomesAction'
 
 import { translations } from './constants'
