@@ -1,12 +1,14 @@
 import React from 'react'
+import { Provider } from 'react-redux'
 import renderer from 'react-test-renderer'
 import '@testing-library/jest-dom/extend-expect'
+import configureStore from 'redux-mock-store'
 import { renderHook, act } from '@testing-library/react-hooks'
-
 import Gallery from '../gallery'
 import useImages from '../../hooks/useImages'
 import useMosaic from '../../hooks/useMosaic'
 import useInfo from '../../hooks/useInfo'
+import store from '../../store/index'
 
 describe('Gallery component suite', () => {
   const dummyProps = {
@@ -15,12 +17,12 @@ describe('Gallery component suite', () => {
     setGnome: jest.fn(),
   }
 
-  afterEach(() => {
-    jest.clearAllMocks()
-  })
-
   test('Gallery snapshot', () => {
-    const component = renderer.create(<Gallery {...dummyProps} />)
+    const component = renderer.create(
+      <Provider store={store}>
+        <Gallery {...dummyProps} />
+      </Provider>
+    )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })
